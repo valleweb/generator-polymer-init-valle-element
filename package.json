@@ -1,6 +1,6 @@
 {
   "name": "generator-polymer-init-vsc-element",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Generator for vsc elements using Polymer 2x",
   "homepage": "https://github.com/valleweb/generator-polymer-init-vsc-element",
   "author": {

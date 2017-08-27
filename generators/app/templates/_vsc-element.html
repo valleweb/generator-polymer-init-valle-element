@@ -1,0 +1,28 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="<%= elementName %>">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h1>Hello [[prop]]!</h1>
+  </template>
+
+  <script>
+    class ElementElement extends Polymer.Element {
+      static get is() { return '<%= elementName %>'; }
+      static get properties() {
+        return {
+          prop: {
+            type: String,
+            value: 'World'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(ElementElement.is, ElementElement);
+  </script>
+</dom-module>
