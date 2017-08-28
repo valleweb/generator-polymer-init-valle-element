@@ -43,6 +43,9 @@ $ npm install -g generator-polymer-init-vsc-element
 ```sh
 $ polymer init
 ```
+
+![polymer init demo](demo.gif)
+
 ## The generated element
 
 #### Stack / Features:
