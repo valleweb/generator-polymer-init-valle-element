@@ -34,12 +34,14 @@ module.exports = Generator.extend({
 
   writing: function () {
 
+    // Copy all files (except prefixed with _)
     this.fs.copyTpl(
       `${this.templatePath()}/**/!(_)*`,
       this.destinationPath(''),
       this.props
     );
 
+    // Copy main _vsc-element file
     this.fs.copyTpl(
       this.templatePath('_vsc-element.html'),
       this.destinationPath(`${this.props.elementName}.html`),

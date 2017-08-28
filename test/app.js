@@ -1,18 +1,37 @@
 'use strict';
-var path = require('path');
-var assert = require('yeoman-assert');
-var helpers = require('yeoman-test');
+const path = require('path');
+const assert = require('yeoman-assert');
+const helpers = require('yeoman-test');
 
-describe('generator-polymer-init-vsc-element:app', function () {
-  before(function () {
-    return helpers.run(path.join(__dirname, '../generators/app'))
-      .withPrompts({someAnswer: true})
-      .toPromise();
+describe('generator-polymer-init-vsc-element', () => {
+
+  before(() => {
+    const generatorPath = path.join(__dirname, '../generators/app');
+    return helpers.run(generatorPath).withPrompts({elementName: 'vsc-my-custom-element'});
   });
 
-  it('creates files', function () {
+  it('Should write all files with static name', () => {
     assert.file([
-      'dummyfile.txt'
+      'demo/index.html',
+      'test/index.html',
+      '.editorconfig',
+      '.eslintrc.json',
+      '.gitignore',
+      '.travis.yml',
+      'bower.json',
+      'polymer.json',
+      'wct.conf.json',
+      'index.html',
+      'CONTRIBUTING.md',
+      'README.md'
     ]);
   });
+
+  it('Should write the element file with a custom name', () => {
+    assert.file([
+      'test/vsc-my-custom-element_test.html',
+      'vsc-my-custom-element.html'
+    ]);
+  });
+
 });
