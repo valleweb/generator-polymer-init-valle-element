@@ -1,0 +1,32 @@
+{
+  "name": "<%= elementName %>",
+  "description": "<%= elementDesc %>",
+  "version": "0.1.0",
+  "keywords": [
+    "polymer",
+    "web-components"
+  ],
+  "authors": [
+    "<%= githubAccount %>"
+  ],
+  "main": "<%= elementName %>.html",
+  "homepage": "https://github.com/<%= githubAccount %>/<%= elementGithubRepo %>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/<%= githubAccount %>/<%= elementGithubRepo %>"
+  },
+  "license": "https://github.com/<%= githubAccount %>/<%= elementGithubRepo %>/blob/master/LICENSE.md",
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^2.0.0"
+  },
+  "devDependencies": {
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^2.0.0",
+    "web-component-tester": "Polymer/web-component-tester#^6.0.0",
+    "iron-component-page": "PolymerElements/iron-component-page#^2.0.0"
+  }
+}

@@ -56,20 +56,51 @@ module.exports = Generator.extend({
 
   writing: function () {
 
-    // Copy all files (except prefixed with _)
+    // Copy all files (except prefixed with vsc-)
     this.fs.copyTpl(
-      `${this.templatePath()}/**/!(_)*`,
+      `${this.templatePath()}/**/!(vsc-)*`,
       this.destinationPath(''),
       this.props
     );
 
     // Copy main _vsc-element file
     this.fs.copyTpl(
-      this.templatePath('_vsc-element.html'),
+      this.templatePath('vsc-element.html'),
       this.destinationPath(`${this.props.elementName}.html`),
       this.props
     );
 
+    // Copy main test/_vsc-element_test file
+    this.fs.copyTpl(
+      this.templatePath('test/vsc-element_test.html'),
+      this.destinationPath(`test/${this.props.elementName}_test.html`),
+      this.props
+    );
+
+    // Copy hidden files
+    this.fs.copyTpl(
+      this.templatePath('_editorconfig'),
+      this.destinationPath('.editorconfig'),
+      this.props
+    );
+
+    this.fs.copyTpl(
+      this.templatePath('_eslintrc.json'),
+      this.destinationPath('.eslintrc.json'),
+      this.props
+    );
+
+    this.fs.copyTpl(
+      this.templatePath('_gitignore'),
+      this.destinationPath('.gitignore'),
+      this.props
+    );
+
+    this.fs.copyTpl(
+      this.templatePath('_travis.yml'),
+      this.destinationPath('.travis.yml'),
+      this.props
+    );
   },
 
   //---------------------------

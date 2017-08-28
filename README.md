@@ -52,7 +52,6 @@ $ polymer init
 - Unit tests with Web Component Tester
 - Lint with ESlint and Polylint
 - CI with travis
-- Cross Browser Testing with SauceLabs
 - Provide demos
 - Docs for all
 - Styling API with custom properties
@@ -70,13 +69,12 @@ $ polymer init
 	|   ├── you-element_test.html
 	|   └── index.html
 	├── .editorconfig
-	├── .eslintrc.jso
+	├── .eslintrc.json
 	├── .gitignore
 	├── .travis.yml
 	├── bower.json
 	├── polymer.json
-	├── wct.conf.json
-	├── you-element_test.html
+	├── you-element.html
 	└── index.html
 
 ## Development

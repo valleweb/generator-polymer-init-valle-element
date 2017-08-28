@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title><%= elementName %> test</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="../../web-component-tester/browser.js"></script>
+
+    <link rel="import" href="../<%= elementName %>.html">
+  </head>
+  <body>
+
+    <test-fixture id="BasicTestFixture">
+      <template>
+        <<%= elementName %>></<%= elementName %>>
+      </template>
+    </test-fixture>
+
+    <test-fixture id="testFixtureWithProp">
+      <template>
+        <<%= elementName %> prop="Humans"></<%= elementName %>>
+      </template>
+    </test-fixture>
+
+    <script>
+      suite('<%= elementName %>', () => {
+
+        test('', () => {
+          const element = fixture('BasicTestFixture');
+          const elementShadowRoot = element.shadowRoot;
+          const elementHeader = elementShadowRoot.querySelector('h1');
+          assert.equal(elementHeader.innerHTML, 'Hello World!');
+        });
+
+        test('', () => {
+          const element = fixture('testFixtureWithProp');
+          assert.equal(element.prop1, 'Humans');
+        });
+
+      });
+    </script>
+
+  </body>
+</html>

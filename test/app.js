@@ -35,7 +35,6 @@ describe('generator-polymer-init-vsc-element', () => {
         '.travis.yml',
         'bower.json',
         'polymer.json',
-        'wct.conf.json',
         'index.html',
         'LICENSE.md',
         'CONTRIBUTING.md',
@@ -98,16 +97,6 @@ describe('generator-polymer-init-vsc-element', () => {
 
       assert.fileContent(file, '<link rel="import" href="../vsc-my-custom-element.html">');
       assert.fileContent(file, '<vsc-my-custom-element></vsc-my-custom-element>');
-
-    });
-
-    //-------------
-
-    it('Should write the test/index.html file with custom content', () => {
-
-      const file = 'test/index.html';
-
-      assert.fileContent(file, "WCT.loadSuites(['vsc-my-custom-element_test.html']);");
 
     });
 

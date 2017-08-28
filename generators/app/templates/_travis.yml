@@ -1,0 +1,10 @@
+language: node_js
+node_js: stable
+sudo: required
+before_script:
+- npm install -g bower polylint eslint eslint-plugin-html web-component-tester
+- bower install
+- polylint
+- eslint *.html
+script:
+- wct
