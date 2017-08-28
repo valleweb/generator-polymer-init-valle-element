@@ -58,21 +58,21 @@ module.exports = Generator.extend({
 
     // Copy all files (except prefixed with vsc-)
     this.fs.copyTpl(
-      `${this.templatePath()}/**/!(vsc-)*`,
+      `${this.templatePath()}/**/!(_)*`,
       this.destinationPath(''),
       this.props
     );
 
     // Copy main _vsc-element file
     this.fs.copyTpl(
-      this.templatePath('vsc-element.html'),
+      this.templatePath('_vsc-element.html'),
       this.destinationPath(`${this.props.elementName}.html`),
       this.props
     );
 
     // Copy main test/_vsc-element_test file
     this.fs.copyTpl(
-      this.templatePath('test/vsc-element_test.html'),
+      this.templatePath('test/_vsc-element_test.html'),
       this.destinationPath(`test/${this.props.elementName}_test.html`),
       this.props
     );
