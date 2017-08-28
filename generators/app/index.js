@@ -17,12 +17,32 @@ module.exports = Generator.extend({
     );
 
     // Questions
-    const prompts = [{
-      type: 'input',
-      name: 'elementName',
-      message: 'What is the name of the element?',
-      default: 'vsc-element'
-    }];
+    const prompts = [
+      {
+        type: 'input',
+        name: 'elementName',
+        message: 'What is the name of the element?',
+        default: 'vsc-element'
+      },
+      {
+        type: 'input',
+        name: 'elementDesc',
+        message: 'What is the description of the element?',
+        default: 'Awesome vsc element'
+      },
+      {
+        type: 'input',
+        name: 'elementGithubRepo',
+        message: 'What is the name of the element repository?',
+        default: 'vsc-element'
+      },
+      {
+        type: 'input',
+        name: 'githubAccount',
+        message: 'What is your github username/organization?',
+        default: 'valleweb'
+      }
+    ];
 
     // Final prompt
     const finalPrompt = this.prompt(prompts).then(function (props) {
