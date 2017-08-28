@@ -37,6 +37,7 @@ describe('generator-polymer-init-vsc-element', () => {
         'polymer.json',
         'wct.conf.json',
         'index.html',
+        'LICENSE.md',
         'CONTRIBUTING.md',
         'README.md'
       ]);

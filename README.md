@@ -1,32 +1,143 @@
-# generator-polymer-init-vsc-element [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> Generator for vsc elements using Polymer 2x
+# vsc-element generator
 
-## Installation
+> Generator for vsc elements using Polymer 2x.
 
-First, install [Yeoman](http://yeoman.io) and generator-polymer-init-vsc-element using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+[![NPM version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+[![Dependency Status][daviddm-image]][daviddm-url]
 
-```bash
-npm install -g yo
-npm install -g generator-polymer-init-vsc-element
+## Table of contents
+
+- [How to install and use](#how-to-install-and-use)
+- [The generated element](#the-generated-element)
+  - [Stack / Features](#stack-/-features)
+  - [Folders Structure](#folders-structure)
+- [Development](#development)
+  - [Run the project locally](#run-the-project-locally)
+  - [Code Style](#code-style)
+  - [Tests](#tests)
+- [Versioning](#versioning)
+- [Contributing](#contributing)
+- [History](#history)
+- [License](#license)
+
+## How to install and use
+
+Verify if you have [node](http://nodejs.org/) and [npm](https://www.npmjs.org/) installed.
+
+1 - Install [bower](https://bower.io/) and [Polymer CLI](https://www.polymer-project.org/2.0/docs/tools/polymer-cli):
+
+```sh
+$ npm install -g bower
+$ npm install -g polymer-cli
 ```
 
-Then generate your new project:
+2 - Install the vsc-element generator:
 
-```bash
-yo polymer-init-vsc-element
+```sh
+$ npm install -g generator-polymer-init-vsc-element
 ```
 
-## Getting To Know Yeoman
+3 - Then generate your new element:
 
- * Yeoman has a heart of gold.
- * Yeoman is a person with feelings and opinions, but is very easy to work with.
- * Yeoman can be too opinionated at times but is easily convinced not to be.
- * Feel free to [learn more about Yeoman](http://yeoman.io/).
+```sh
+$ polymer init
+```
+## The generated element
+
+#### Stack / Features:
+
+- Polymer 2.x
+- Bower for dependencies
+- Unit tests with Web Component Tester
+- Lint with ESlint and Polylint
+- CI with travis
+- Cross Browser Testing with SauceLabs
+- Provide demos
+- Docs for all
+- Styling API with custom properties
+- more...
+
+#### Folders Structure:
+
+	.
+	├── README.md
+	├── CONTRIBUTING.md
+	├── LICENSE.md
+	├── demo/
+	|   └── index.html
+	├── test/
+	|   ├── you-element_test.html
+	|   └── index.html
+	├── .editorconfig
+	├── .eslintrc.jso
+	├── .gitignore
+	├── .travis.yml
+	├── bower.json
+	├── polymer.json
+	├── wct.conf.json
+	├── you-element_test.html
+	└── index.html
+
+## Development
+
+#### Run the project locally
+
+1 - Prepare the environment:
+
+```sh
+$ npm install -g polymer-cli
+```
+
+2 - Clone the project and install the dependencies:
+
+```sh
+$ git clone https://github.com/valleweb/generator-polymer-init-vsc-element.git
+$ cd generator-polymer-init-vsc-element
+$ npm install
+```
+
+3 - Link the generator locally:
+
+```sh
+$ npm link
+```
+
+4 - Run the generator:
+
+```sh
+$ polymer init
+```
+
+#### Code Style
+
+Follow the [Banana NodeJS style guide](https://github.com/bananacss/banana-style-guide).
+
+#### Tests
+
+*Run the unit tests with [mocha](https://mochajs.org/) and Validate the code style with [ESLint](http://eslint.org/):*
+
+```sh
+$ npm test
+```
+
+## Versioning
+
+To keep better organization of releases we follow the [Semantic Versioning 2.0.0](http://semver.org/) guidelines.
+
+## Contributing
+
+Find on our [issues](https://github.com/valleweb/generator-polymer-init-vsc-element/issues/) the next steps of the project ;)
+<br>
+Want to contribute? [Follow these recommendations](https://github.com/valleweb/generator-polymer-init-vsc-element/blob/master/CONTRIBUTING.md).
+
+## History
+
+See [Releases](https://github.com/valleweb/generator-polymer-init-vsc-element/releases) for detailed changelog.
 
 ## License
 
-MIT © [afonsopacifer](afonsopacifer.github.io)
-
+[MIT License](https://github.com/valleweb/generator-polymer-init-vsc-element/blob/master/LICENSE.md) © [valleweb team](https://github.com/valleweb)
 
 [npm-image]: https://badge.fury.io/js/generator-polymer-init-vsc-element.svg
 [npm-url]: https://npmjs.org/package/generator-polymer-init-vsc-element
@@ -34,5 +145,3 @@ MIT © [afonsopacifer](afonsopacifer.github.io)
 [travis-url]: https://travis-ci.org/valleweb/generator-polymer-init-vsc-element
 [daviddm-image]: https://david-dm.org/valleweb/generator-polymer-init-vsc-element.svg?theme=shields.io
 [daviddm-url]: https://david-dm.org/valleweb/generator-polymer-init-vsc-element
-[coveralls-image]: https://coveralls.io/repos/valleweb/generator-polymer-init-vsc-element/badge.svg
-[coveralls-url]: https://coveralls.io/r/valleweb/generator-polymer-init-vsc-element
