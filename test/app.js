@@ -7,7 +7,8 @@ describe('generator-polymer-init-vsc-element', () => {
 
   before(() => {
     const generatorPath = path.join(__dirname, '../generators/app');
-    return helpers.run(generatorPath).withPrompts({elementName: 'vsc-my-custom-element'});
+    return helpers.run(generatorPath)
+                  .withPrompts({elementName: 'vsc-my-custom-element'});
   });
 
   it('Should write all files with static name', () => {

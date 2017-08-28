@@ -1,3 +1,5 @@
+/* eslint prefer-arrow-callback: 0 */
+
 'use strict';
 const Generator = require('yeoman-generator');
 const chalk = require('chalk');
