@@ -144,6 +144,16 @@ describe('generator-polymer-init-vsc-element', () => {
 
     });
 
+    //-------------
+
+    it('Should write the LICENSE.md file with custom content', () => {
+
+      const file = 'LICENSE.md';
+
+      assert.fileContent(file, 'valleweb');
+
+    });
+
   });
 
 });
