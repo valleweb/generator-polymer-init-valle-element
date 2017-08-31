@@ -44,20 +44,20 @@ $ npm install -g generator-polymer-init-vsc-element
 $ polymer init
 ```
 
-![polymer init demo](demo.gif)
+![polymer init demo](img/init-demo.gif)
 
 ## The generated element
 
 #### Stack / Features:
 
-- Polymer 2.x
-- Bower for dependencies
-- Unit tests with Web Component Tester
-- Lint with ESlint and Polylint
-- CI with travis
-- Provide demos
-- Docs for all
-- Styling API with custom properties
+- Polymer **2.x**
+- **Bower** for dependencies
+- Unit tests with Web **Component Tester**
+- Lint with **ESlint** and **Polylint**
+- CI with **travis**
+- Provide **UI docs**
+- **Docs** for all
+- Styling API with **custom properties**
 - more...
 
 #### Folders Structure:
@@ -75,10 +75,17 @@ $ polymer init
 	├── .eslintrc.json
 	├── .gitignore
 	├── .travis.yml
+	├── wct.conf.json
 	├── bower.json
 	├── polymer.json
 	├── you-element.html
 	└── index.html
+
+#### UI Docs:
+
+Provide by [iron-demo-helpers](https://github.com/PolymerElements/iron-demo-helpers).
+
+![UI docs demo](img/ui-docs-demo.gif)
 
 ## Development
 
