@@ -21,21 +21,21 @@
 
     <test-fixture id="testFixtureWithProp">
       <template>
-        <<%= elementName %> prop="Humans"></<%= elementName %>>
+        <<%= elementName %> prop1="Humans"></<%= elementName %>>
       </template>
     </test-fixture>
 
     <script>
       suite('<%= elementName %>', () => {
 
-        test('', () => {
+        test('Should render the element with default <h1> text', () => {
           const element = fixture('BasicTestFixture');
           const elementShadowRoot = element.shadowRoot;
           const elementHeader = elementShadowRoot.querySelector('h1');
           assert.equal(elementHeader.innerHTML, 'Hello World!');
         });
 
-        test('', () => {
+        test('Should render the element with prop1', () => {
           const element = fixture('testFixtureWithProp');
           assert.equal(element.prop1, 'Humans');
         });
