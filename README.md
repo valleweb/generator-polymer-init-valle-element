@@ -66,8 +66,6 @@ $ polymer init
 	├── README.md
 	├── CONTRIBUTING.md
 	├── LICENSE.md
-	├── demo/
-	|   └── index.html
 	├── test/
 	|   ├── you-element_test.html
 	|   └── index.html

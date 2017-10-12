@@ -27,7 +27,6 @@ describe('generator-polymer-init-vsc-element', () => {
 
     it('Should write all files with static name', () => {
       assert.file([
-        'demo/index.html',
         'test/index.html',
         '.editorconfig',
         '.eslintrc.json',
@@ -66,7 +65,6 @@ describe('generator-polymer-init-vsc-element', () => {
       assert.fileContent(file, '# vsc-my-custom-element');
       assert.fileContent(file, '> Awesome vsc element');
       assert.fileContent(file, '[![Travis CI Status](https://travis-ci.org/valleweb/vsc-my-custom-element.svg?branch=master)](https://travis-ci.org/valleweb/vsc-my-custom-element)');
-      assert.fileContent(file, '[![bower](https://img.shields.io/bower/v/vsc-my-custom-element.svg)](https://www.npmjs.com/package/bananacss)');
       assert.fileContent(file, '[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/valleweb/vsc-my-custom-element)');
       assert.fileContent(file, 'bower install vsc-my-custom-element --save');
       assert.fileContent(file, '<link rel="import" href="bower_components/vsc-my-custom-element/vsc-my-custom-element.html">');
@@ -86,17 +84,6 @@ describe('generator-polymer-init-vsc-element', () => {
 
       assert.fileContent(file, 'id="vsc-my-custom-element"');
       assert.fileContent(file, "return 'vsc-my-custom-element'");
-
-    });
-
-    //-------------
-
-    it('Should write the demo/index.html file with custom content', () => {
-
-      const file = 'demo/index.html';
-
-      assert.fileContent(file, '<link rel="import" href="../vsc-my-custom-element.html">');
-      assert.fileContent(file, '<vsc-my-custom-element></vsc-my-custom-element>');
 
     });
 

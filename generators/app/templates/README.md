@@ -3,7 +3,6 @@
 > <%= elementDesc %>
 
 [![Travis CI Status](https://travis-ci.org/<%= githubAccount %>/<%= elementGithubRepo %>.svg?branch=master)](https://travis-ci.org/<%= githubAccount %>/<%= elementGithubRepo %>)
-[![bower](https://img.shields.io/bower/v/<%= elementGithubRepo %>.svg)](https://www.npmjs.com/package/<%= elementGithubRepo %>)
 [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/<%= githubAccount %>/<%= elementGithubRepo %>)
 
 ## How to install and use:

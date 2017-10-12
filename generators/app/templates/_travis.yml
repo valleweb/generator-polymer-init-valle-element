@@ -1,5 +1,12 @@
 language: node_js
 node_js: stable
+addons:
+  firefox: latest
+  apt:
+      sources:
+        - google-chrome
+      packages:
+        - google-chrome-stable
 sudo: required
 before_script:
 - npm install -g bower polymer-cli eslint eslint-plugin-html web-component-tester
@@ -7,4 +14,4 @@ before_script:
 - polymer lint
 - eslint *.html
 script:
-- wct
+- xvfb-run wct
