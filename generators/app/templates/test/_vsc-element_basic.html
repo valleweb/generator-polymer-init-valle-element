@@ -4,16 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
-    <title><%= elementName %> test</title>
+    <title><%= elementName %> basic test</title>
 
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
     <script src="../../web-component-tester/browser.js"></script>
 
+    <link rel="import" href="../../polymer/polymer.html">
     <link rel="import" href="../<%= elementName %>.html">
   </head>
   <body>
 
-    <test-fixture id="BasicTestFixture">
+    <test-fixture id="basicTestFixture">
       <template>
         <<%= elementName %>></<%= elementName %>>
       </template>
@@ -32,7 +33,7 @@
             elementWithProp;
 
         setup(() => {
-          basicElement = fixture('BasicTestFixture');
+          basicElement = fixture('basicTestFixture');
           elementWithProp = fixture('testFixtureWithProp');
         });
 
