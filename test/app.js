@@ -27,6 +27,7 @@ describe('generator-polymer-init-vsc-element', () => {
 
     it('Should write all files with static name', () => {
       assert.file([
+        'demo/index.html',
         'test/index.html',
         '.editorconfig',
         '.eslintrc.json',
@@ -45,7 +46,8 @@ describe('generator-polymer-init-vsc-element', () => {
 
     it('Should write the element file with a custom name', () => {
       assert.file([
-        'test/vsc-my-custom-element_test.html',
+        'test/vsc-my-custom-element_basic.html',
+        'test/vsc-my-custom-element_a11y.html',
         'vsc-my-custom-element.html'
       ]);
     });
@@ -93,7 +95,7 @@ describe('generator-polymer-init-vsc-element', () => {
 
       const file = 'test/index.html';
 
-      assert.fileContent(file, "WCT.loadSuites(['vsc-my-custom-element_test.html']);");
+      assert.fileContent(file, "WCT.loadSuites(['vsc-my-custom-element_basic.html', 'vsc-my-custom-element_a11y.html']);");
 
     });
 
@@ -110,9 +112,9 @@ describe('generator-polymer-init-vsc-element', () => {
 
     //-------------
 
-    it('Should write the test/vsc-my-custom-element_test.html file with custom content', () => {
+    it('Should write the test/vsc-my-custom-element_basic.html file with custom content', () => {
 
-      const file = 'test/vsc-my-custom-element_test.html';
+      const file = 'test/vsc-my-custom-element_basic.html';
 
       assert.fileContent(file, '<link rel="import" href="../vsc-my-custom-element.html">');
       assert.fileContent(file, "suite('vsc-my-custom-element'");

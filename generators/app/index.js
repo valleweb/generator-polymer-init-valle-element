@@ -70,12 +70,20 @@ module.exports = Generator.extend({
       this.props
     );
 
-    // Copy main test/_vsc-element_test file
+    // Copy main test/_vsc-element_basic file
     this.fs.copyTpl(
-      this.templatePath('test/_vsc-element_test.html'),
-      this.destinationPath(`test/${this.props.elementName}_test.html`),
+      this.templatePath('test/_vsc-element_basic.html'),
+      this.destinationPath(`test/${this.props.elementName}_basic.html`),
       this.props
     );
+
+    // Copy main test/_vsc-element_a11y file
+    this.fs.copyTpl(
+      this.templatePath('test/_vsc-element_a11y.html'),
+      this.destinationPath(`test/${this.props.elementName}_a11y.html`),
+      this.props
+    );
+
 
     // Copy hidden files
     this.fs.copyTpl(

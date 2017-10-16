@@ -5,72 +5,14 @@
   <head>
     <title><%= elementName %> demo</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../webcomponentsjs/webcomponents-lite.js"></script>
-    <link rel="import" href="../iron-demo-helpers/demo-snippet.html">
-    <link rel="import" href="../iron-demo-helpers/demo-pages-shared-styles.html">
-    <link rel="import" href="<%= elementName %>.html">
+    <meta http-equiv="refresh" content="0; url=/components/<%= elementName %>/demo">
   </head>
 
   <body>
-
-    <custom-style>
-      <style is="custom-style" include="demo-pages-shared-styles">
-        .vertical-section-container {
-          max-width: 500px;
-        }
-      </style>
-    </custom-style>
-
-    <main class="vertical-section-container centered">
-      <h1><%= elementName %> demo</h1>
-
-      <!-- Default - demo
-      ========================= -->
-
-      <h2>Default</h2>
-
-      <demo-snippet class="centered-demo">
-        <template>
-
-          <<%= elementName %>></<%= elementName %>>
-
-        </template>
-      </demo-snippet>
-
-      <!-- With Prop - demo
-      ========================= -->
-
-      <h2>With Prop</h2>
-
-      <demo-snippet class="centered-demo">
-        <template>
-
-          <<%= elementName %> prop1="Human"></<%= elementName %>>
-
-        </template>
-      </demo-snippet>
-
-      <!-- Custom style - demo
-      ========================= -->
-
-      <h2>Custom style</h2>
-
-      <demo-snippet class="centered-demo">
-        <template>
-
-        <style is="custom-style">
-          .shiny {
-            --vsc-element-text-color: #a1f442;
-          }
-        </style>
-
-          <<%= elementName %> class="shiny"></<%= elementName %>>
-
-        </template>
-      </demo-snippet>
-
-    </main>
-
+    <!--
+      API docs are available in REAME.md
+      Demos are avaible in ./demo folder
+    -->
   </body>
+
 </html>
