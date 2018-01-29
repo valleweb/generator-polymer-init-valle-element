@@ -6,17 +6,17 @@ const path = require('path');
 const assert = require('yeoman-assert');
 const helpers = require('yeoman-test');
 
-describe('generator-polymer-init-vsc-element', () => {
+describe('generator-polymer-init-valle-element', () => {
 
   before(() => {
     const generatorPath = path.join(__dirname, '../generators/app');
     return helpers.run(generatorPath)
-                  .withPrompts({
-                    elementName: 'vsc-my-custom-element',
-                    elementDesc: 'Awesome vsc element',
-                    elementGithubRepo: 'vsc-my-custom-element',
-                    githubAccount: 'valleweb'
-                  });
+      .withPrompts({
+        elementName: 'valle-my-custom-element',
+        elementDesc: 'Awesome valle element',
+        elementGithubRepo: 'valle-my-custom-element',
+        githubAccount: 'valleweb'
+      });
   });
 
   //---------------------------
@@ -46,9 +46,9 @@ describe('generator-polymer-init-vsc-element', () => {
 
     it('Should write the element file with a custom name', () => {
       assert.file([
-        'test/vsc-my-custom-element_basic.html',
-        'test/vsc-my-custom-element_a11y.html',
-        'vsc-my-custom-element.html'
+        'test/valle-my-custom-element_basic.html',
+        'test/valle-my-custom-element_a11y.html',
+        'valle-my-custom-element.html'
       ]);
     });
 
@@ -64,17 +64,17 @@ describe('generator-polymer-init-vsc-element', () => {
 
       const file = 'README.md';
 
-      assert.fileContent(file, '# vsc-my-custom-element');
-      assert.fileContent(file, '> Awesome vsc element');
-      assert.fileContent(file, '[![Travis CI Status](https://travis-ci.org/valleweb/vsc-my-custom-element.svg?branch=master)](https://travis-ci.org/valleweb/vsc-my-custom-element)');
-      assert.fileContent(file, '[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/valleweb/vsc-my-custom-element)');
-      assert.fileContent(file, 'bower install vsc-my-custom-element --save');
-      assert.fileContent(file, '<link rel="import" href="bower_components/vsc-my-custom-element/vsc-my-custom-element.html">');
-      assert.fileContent(file, '<link rel="import" href="vsc-my-custom-element.html">');
-      assert.fileContent(file, '<vsc-my-custom-element></vsc-my-custom-element>');
-      assert.fileContent(file, '//github.com/valleweb/vsc-my-custom-element/issues/');
-      assert.fileContent(file, '//github.com/valleweb/vsc-my-custom-element/blob/master/CONTRIBUTING.md');
-      assert.fileContent(file, '//github.com/valleweb/vsc-my-custom-element/releases');
+      assert.fileContent(file, '# valle-my-custom-element');
+      assert.fileContent(file, '> Awesome valle element');
+      assert.fileContent(file, '[![Travis CI Status](https://travis-ci.org/valleweb/valle-my-custom-element.svg?branch=master)](https://travis-ci.org/valleweb/valle-my-custom-element)');
+      assert.fileContent(file, '[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/valleweb/valle-my-custom-element)');
+      assert.fileContent(file, 'bower install valle-my-custom-element --save');
+      assert.fileContent(file, '<link rel="import" href="bower_components/valle-my-custom-element/valle-my-custom-element.html">');
+      assert.fileContent(file, '<link rel="import" href="valle-my-custom-element.html">');
+      assert.fileContent(file, '<valle-my-custom-element></valle-my-custom-element>');
+      assert.fileContent(file, '//github.com/valleweb/valle-my-custom-element/issues/');
+      assert.fileContent(file, '//github.com/valleweb/valle-my-custom-element/blob/master/CONTRIBUTING.md');
+      assert.fileContent(file, '//github.com/valleweb/valle-my-custom-element/releases');
 
     });
 
@@ -82,10 +82,10 @@ describe('generator-polymer-init-vsc-element', () => {
 
     it('Should write the element file with custom content', () => {
 
-      const file = 'vsc-my-custom-element.html';
+      const file = 'valle-my-custom-element.html';
 
-      assert.fileContent(file, 'id="vsc-my-custom-element"');
-      assert.fileContent(file, "return 'vsc-my-custom-element'");
+      assert.fileContent(file, 'id="valle-my-custom-element"');
+      assert.fileContent(file, "return 'valle-my-custom-element'");
 
     });
 
@@ -95,7 +95,7 @@ describe('generator-polymer-init-vsc-element', () => {
 
       const file = 'test/index.html';
 
-      assert.fileContent(file, "WCT.loadSuites(['vsc-my-custom-element_basic.html', 'vsc-my-custom-element_a11y.html']);");
+      assert.fileContent(file, "WCT.loadSuites(['valle-my-custom-element_basic.html', 'valle-my-custom-element_a11y.html']);");
 
     });
 
@@ -105,20 +105,20 @@ describe('generator-polymer-init-vsc-element', () => {
 
       const file = 'bower.json';
 
-      assert.fileContent(file, '"name": "vsc-my-custom-element"');
-      assert.fileContent(file, '"main": "vsc-my-custom-element.html"');
+      assert.fileContent(file, '"name": "valle-my-custom-element"');
+      assert.fileContent(file, '"main": "valle-my-custom-element.html"');
 
     });
 
     //-------------
 
-    it('Should write the test/vsc-my-custom-element_basic.html file with custom content', () => {
+    it('Should write the test/valle-my-custom-element_basic.html file with custom content', () => {
 
-      const file = 'test/vsc-my-custom-element_basic.html';
+      const file = 'test/valle-my-custom-element_basic.html';
 
-      assert.fileContent(file, '<link rel="import" href="../vsc-my-custom-element.html">');
-      assert.fileContent(file, "suite('vsc-my-custom-element'");
-      assert.fileContent(file, '<vsc-my-custom-element></vsc-my-custom-element>');
+      assert.fileContent(file, '<link rel="import" href="../valle-my-custom-element.html">');
+      assert.fileContent(file, "suite('valle-my-custom-element'");
+      assert.fileContent(file, '<valle-my-custom-element></valle-my-custom-element>');
 
     });
 
