@@ -23,19 +23,19 @@
 
 ## How to install and use
 
-Verify if you have [node](http://nodejs.org/) and [npm](https://www.npmjs.org/) installed.
+Verify if you have [node](http://nodejs.org/) and [yarn](https://yarnpkg.com/en/) installed.
 
 1 - Install [bower](https://bower.io/) and [Polymer CLI](https://www.polymer-project.org/2.0/docs/tools/polymer-cli):
 
 ```sh
-$ npm install -g bower
-$ npm install -g polymer-cli
+$ yarn global add bower
+$ yarn global add polymer-cli
 ```
 
 2 - Install the valle-element generator:
 
 ```sh
-$ npm install -g generator-polymer-init-valle-element
+$ yarn global add generator-polymer-init-valle-element
 ```
 
 3 - Then generate your new element:
@@ -94,7 +94,7 @@ Provide by [iron-demo-helpers](https://github.com/PolymerElements/iron-demo-help
 1 - Prepare the environment:
 
 ```sh
-$ npm install -g polymer-cli
+$ yarn global add polymer-cli
 ```
 
 2 - Clone the project and install the dependencies:
@@ -102,7 +102,7 @@ $ npm install -g polymer-cli
 ```sh
 $ git clone https://github.com/valleweb/generator-polymer-init-valle-element.git
 $ cd generator-polymer-init-valle-element
-$ npm install
+$ yarn
 ```
 
 3 - Link the generator locally:
@@ -126,7 +126,7 @@ Follow the [Banana NodeJS style guide](https://github.com/bananacss/banana-style
 *Run the unit tests with [mocha](https://mochajs.org/) and Validate the code style with [ESLint](http://eslint.org/):*
 
 ```sh
-$ npm test
+$ yarn run test
 ```
 
 ## Versioning

@@ -65,7 +65,7 @@ Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | 11+ | Latest ✔
 1 - Install [Bower](http://bower.io/) & [Polymer-CLI](https://www.polymer-project.org/1.0/docs/tools/polymer-cli):
 
 ```sh
-$ [sudo] npm install -g bower polymer-cli
+$ [sudo] yarn global add bower polymer-cli
 ```
 
 2 - Install local dependencies:
@@ -90,8 +90,8 @@ Go to [localhost:8080/components/<%= elementName %>/](http://localhost:8080/comp
 Linting with eslint:
 
 ```sh
-$ [sudo] npm install -g eslint
-$ [sudo] npm install -g eslint-plugin-html
+$ [sudo] yarn global add eslint
+$ [sudo] yarn global add eslint-plugin-html
 
 $ eslint *.html
 ```
@@ -107,7 +107,7 @@ $ polymer lint
 Install the Web Component Tester (WCT) test runner:
 
 ```sh
-$ [sudo] npm install -g web-component-tester
+$ [sudo] yarn global add web-component-tester
 ```
 
 Run tests:
