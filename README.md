@@ -1,6 +1,6 @@
-# vsc-element generator
+# valle-element generator
 
-> Generator for vsc elements using Polymer 2x.
+> Generator for valle elements using Polymer 2x.
 
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
@@ -32,10 +32,10 @@ $ npm install -g bower
 $ npm install -g polymer-cli
 ```
 
-2 - Install the vsc-element generator:
+2 - Install the valle-element generator:
 
 ```sh
-$ npm install -g generator-polymer-init-vsc-element
+$ npm install -g generator-polymer-init-valle-element
 ```
 
 3 - Then generate your new element:
@@ -100,8 +100,8 @@ $ npm install -g polymer-cli
 2 - Clone the project and install the dependencies:
 
 ```sh
-$ git clone https://github.com/valleweb/generator-polymer-init-vsc-element.git
-$ cd generator-polymer-init-vsc-element
+$ git clone https://github.com/valleweb/generator-polymer-init-valle-element.git
+$ cd generator-polymer-init-valle-element
 $ npm install
 ```
 
@@ -135,21 +135,21 @@ To keep better organization of releases we follow the [Semantic Versioning 2.0.0
 
 ## Contributing
 
-Find on our [issues](https://github.com/valleweb/generator-polymer-init-vsc-element/issues/) the next steps of the project ;)
+Find on our [issues](https://github.com/valleweb/generator-polymer-init-valle-element/issues/) the next steps of the project ;)
 <br>
-Want to contribute? [Follow these recommendations](https://github.com/valleweb/generator-polymer-init-vsc-element/blob/master/CONTRIBUTING.md).
+Want to contribute? [Follow these recommendations](https://github.com/valleweb/generator-polymer-init-valle-element/blob/master/CONTRIBUTING.md).
 
 ## History
 
-See [Releases](https://github.com/valleweb/generator-polymer-init-vsc-element/releases) for detailed changelog.
+See [Releases](https://github.com/valleweb/generator-polymer-init-valle-element/releases) for detailed changelog.
 
 ## License
 
-[MIT License](https://github.com/valleweb/generator-polymer-init-vsc-element/blob/master/LICENSE.md) © [valleweb team](https://github.com/valleweb)
+[MIT License](https://github.com/valleweb/generator-polymer-init-valle-element/blob/master/LICENSE.md) © [valleweb team](https://github.com/valleweb)
 
-[npm-image]: https://badge.fury.io/js/generator-polymer-init-vsc-element.svg
-[npm-url]: https://npmjs.org/package/generator-polymer-init-vsc-element
-[travis-image]: https://travis-ci.org/valleweb/generator-polymer-init-vsc-element.svg?branch=master
-[travis-url]: https://travis-ci.org/valleweb/generator-polymer-init-vsc-element
-[daviddm-image]: https://david-dm.org/valleweb/generator-polymer-init-vsc-element.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/valleweb/generator-polymer-init-vsc-element
+[npm-image]: https://badge.fury.io/js/generator-polymer-init-valle-element.svg
+[npm-url]: https://npmjs.org/package/generator-polymer-init-valle-element
+[travis-image]: https://travis-ci.org/valleweb/generator-polymer-init-valle-element.svg?branch=master
+[travis-url]: https://travis-ci.org/valleweb/generator-polymer-init-valle-element
+[daviddm-image]: https://david-dm.org/valleweb/generator-polymer-init-valle-element.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/valleweb/generator-polymer-init-valle-element
