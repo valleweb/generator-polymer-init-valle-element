@@ -1,8 +1,8 @@
 {
-  "name": "generator-polymer-init-vsc-element",
+  "name": "generator-polymer-init-valle-element",
   "version": "0.1.0",
-  "description": "Generator for vsc elements using Polymer 2x",
-  "homepage": "https://github.com/valleweb/generator-polymer-init-vsc-element",
+  "description": "Generator for valle elements using Polymer 2x",
+  "homepage": "https://github.com/valleweb/generator-polymer-init-valle-element",
   "author": {
     "name": "valleweb",
     "url": "https://github.com/valleweb/"
@@ -14,7 +14,7 @@
   "keywords": [
     "web-components",
     "polymer-2x",
-    "vsc",
+    "valle",
     "yeoman-generator"
   ],
   "dependencies": {
@@ -34,7 +34,7 @@
     "gulp-plumber": "^1.0.0",
     "gulp-nsp": "^2.1.0"
   },
-  "repository": "https://github.com/valleweb/generator-polymer-init-vsc-element.git",
+  "repository": "https://github.com/valleweb/generator-polymer-init-valle-element.git",
   "scripts": {
     "prepublish": "gulp prepublish",
     "test": "gulp"

@@ -4,7 +4,9 @@
   "version": "0.1.0",
   "keywords": [
     "polymer",
-    "web-components"
+    "web-components",
+    "valleweb",
+    "valle"
   ],
   "authors": [
     "<%= githubAccount %>"

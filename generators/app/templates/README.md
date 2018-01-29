@@ -48,8 +48,8 @@ The following custom properties and mixins are available for styling:
 
 Custom property                | Default  | Description
 :---                           |:---      |:---
---vsc-element-text-color       | #f44277  | Text color
---vsc-element-text             | {}       | Text styles
+--valle-element-text-color       | #f44277  | Text color
+--valle-element-text             | {}       | Text styles
 
 
 ## Browser Support

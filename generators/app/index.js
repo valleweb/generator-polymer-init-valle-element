@@ -13,7 +13,7 @@ module.exports = Generator.extend({
 
     // Welcome log
     this.log(
-      yosay(`Welcome to the ${chalk.red('vsc-element')} generator!`)
+      yosay(`Welcome to the ${chalk.red('valle-element')} generator!`)
     );
 
     // Questions
@@ -22,19 +22,19 @@ module.exports = Generator.extend({
         type: 'input',
         name: 'elementName',
         message: 'What is the name of the element?',
-        default: 'vsc-element'
+        default: 'valle-element'
       },
       {
         type: 'input',
         name: 'elementDesc',
         message: 'What is the description of the element?',
-        default: 'Awesome vsc element'
+        default: 'Awesome valle element'
       },
       {
         type: 'input',
         name: 'elementGithubRepo',
         message: 'What is the name of the element repository?',
-        default: 'vsc-element'
+        default: 'valle-element'
       },
       {
         type: 'input',
@@ -56,30 +56,30 @@ module.exports = Generator.extend({
 
   writing: function () {
 
-    // Copy all files (except prefixed with vsc-)
+    // Copy all files (except prefixed with valle-)
     this.fs.copyTpl(
       `${this.templatePath()}/**/!(_)*`,
       this.destinationPath(''),
       this.props
     );
 
-    // Copy main _vsc-element file
+    // Copy main _valle-element file
     this.fs.copyTpl(
-      this.templatePath('_vsc-element.html'),
+      this.templatePath('_valle-element.html'),
       this.destinationPath(`${this.props.elementName}.html`),
       this.props
     );
 
-    // Copy main test/_vsc-element_basic file
+    // Copy main test/_valle-element_basic file
     this.fs.copyTpl(
-      this.templatePath('test/_vsc-element_basic.html'),
+      this.templatePath('test/_valle-element_basic.html'),
       this.destinationPath(`test/${this.props.elementName}_basic.html`),
       this.props
     );
 
-    // Copy main test/_vsc-element_a11y file
+    // Copy main test/_valle-element_a11y file
     this.fs.copyTpl(
-      this.templatePath('test/_vsc-element_a11y.html'),
+      this.templatePath('test/_valle-element_a11y.html'),
       this.destinationPath(`test/${this.props.elementName}_a11y.html`),
       this.props
     );
