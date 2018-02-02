@@ -38,7 +38,7 @@
   "repository": "https://github.com/valleweb/generator-polymer-init-valle-element.git",
   "scripts": {
     "prepublish": "gulp prepublish",
-    "test": "gulp"
+    "test": "gulp && eslint generators/app/index.js"
   },
   "license": "MIT"
 }
