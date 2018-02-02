@@ -10,7 +10,7 @@ const plumber = require('gulp-plumber');
 gulp.task('static', () => {
   return gulp.src('**/*.js')
     .pipe(excludeGitignore())
-    .pipe(eslint())
+    .pipe(eslint({baseConfig:{"extends": "eslint:recommended"}}))
     .pipe(eslint.format())
     .pipe(eslint.failAfterError());
 });
