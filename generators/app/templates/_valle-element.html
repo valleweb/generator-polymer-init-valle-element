@@ -10,8 +10,8 @@
       }
 
       h1 {
-        @apply (--vsc-element-text);
-        color: var(--vsc-element-text-color, #f44277);
+        @apply (--valle-element-text);
+        color: var(--valle-element-text-color, #f44277);
       }
 
     </style>
@@ -21,7 +21,7 @@
   </template>
 
   <script>
-    class vscElement extends Polymer.Element {
+    class valleElement extends Polymer.Element {
 
       static get is() { return '<%= elementName %>'; }
 
@@ -36,6 +36,6 @@
 
     }
 
-    window.customElements.define(vscElement.is, vscElement);
+    window.customElements.define(valleElement.is, valleElement);
   </script>
 </dom-module>

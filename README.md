@@ -1,6 +1,6 @@
-# vsc-element generator
+# valle-element generator
 
-> Generator for vsc elements using Polymer 2x.
+> Generator for valle elements using Polymer 2x.
 
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
@@ -23,19 +23,19 @@
 
 ## How to install and use
 
-Verify if you have [node](http://nodejs.org/) and [npm](https://www.npmjs.org/) installed.
+Verify if you have [node](http://nodejs.org/) and [yarn](https://yarnpkg.com/en/) installed.
 
 1 - Install [bower](https://bower.io/) and [Polymer CLI](https://www.polymer-project.org/2.0/docs/tools/polymer-cli):
 
 ```sh
-$ npm install -g bower
-$ npm install -g polymer-cli
+$ yarn global add bower
+$ yarn global add polymer-cli
 ```
 
-2 - Install the vsc-element generator:
+2 - Install the valle-element generator:
 
 ```sh
-$ npm install -g generator-polymer-init-vsc-element
+$ yarn global add generator-polymer-init-valle-element
 ```
 
 3 - Then generate your new element:
@@ -94,15 +94,15 @@ Provide by [iron-demo-helpers](https://github.com/PolymerElements/iron-demo-help
 1 - Prepare the environment:
 
 ```sh
-$ npm install -g polymer-cli
+$ yarn global add polymer-cli
 ```
 
 2 - Clone the project and install the dependencies:
 
 ```sh
-$ git clone https://github.com/valleweb/generator-polymer-init-vsc-element.git
-$ cd generator-polymer-init-vsc-element
-$ npm install
+$ git clone https://github.com/valleweb/generator-polymer-init-valle-element.git
+$ cd generator-polymer-init-valle-element
+$ yarn
 ```
 
 3 - Link the generator locally:
@@ -126,7 +126,7 @@ Follow the [Banana NodeJS style guide](https://github.com/bananacss/banana-style
 *Run the unit tests with [mocha](https://mochajs.org/) and Validate the code style with [ESLint](http://eslint.org/):*
 
 ```sh
-$ npm test
+$ yarn run test
 ```
 
 ## Versioning
@@ -135,21 +135,21 @@ To keep better organization of releases we follow the [Semantic Versioning 2.0.0
 
 ## Contributing
 
-Find on our [issues](https://github.com/valleweb/generator-polymer-init-vsc-element/issues/) the next steps of the project ;)
+Find on our [issues](https://github.com/valleweb/generator-polymer-init-valle-element/issues/) the next steps of the project ;)
 <br>
-Want to contribute? [Follow these recommendations](https://github.com/valleweb/generator-polymer-init-vsc-element/blob/master/CONTRIBUTING.md).
+Want to contribute? [Follow these recommendations](https://github.com/valleweb/generator-polymer-init-valle-element/blob/master/CONTRIBUTING.md).
 
 ## History
 
-See [Releases](https://github.com/valleweb/generator-polymer-init-vsc-element/releases) for detailed changelog.
+See [Releases](https://github.com/valleweb/generator-polymer-init-valle-element/releases) for detailed changelog.
 
 ## License
 
-[MIT License](https://github.com/valleweb/generator-polymer-init-vsc-element/blob/master/LICENSE.md) © [valleweb team](https://github.com/valleweb)
+[MIT License](https://github.com/valleweb/generator-polymer-init-valle-element/blob/master/LICENSE.md) © [valleweb team](https://github.com/valleweb)
 
-[npm-image]: https://badge.fury.io/js/generator-polymer-init-vsc-element.svg
-[npm-url]: https://npmjs.org/package/generator-polymer-init-vsc-element
-[travis-image]: https://travis-ci.org/valleweb/generator-polymer-init-vsc-element.svg?branch=master
-[travis-url]: https://travis-ci.org/valleweb/generator-polymer-init-vsc-element
-[daviddm-image]: https://david-dm.org/valleweb/generator-polymer-init-vsc-element.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/valleweb/generator-polymer-init-vsc-element
+[npm-image]: https://badge.fury.io/js/generator-polymer-init-valle-element.svg
+[npm-url]: https://npmjs.org/package/generator-polymer-init-valle-element
+[travis-image]: https://travis-ci.org/valleweb/generator-polymer-init-valle-element.svg?branch=master
+[travis-url]: https://travis-ci.org/valleweb/generator-polymer-init-valle-element
+[daviddm-image]: https://david-dm.org/valleweb/generator-polymer-init-valle-element.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/valleweb/generator-polymer-init-valle-element
