@@ -1,6 +1,6 @@
 {
   "name": "generator-polymer-init-valle-element",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Generator for valle elements using Polymer 2x",
   "homepage": "https://github.com/valleweb/generator-polymer-init-valle-element",
   "author": {
