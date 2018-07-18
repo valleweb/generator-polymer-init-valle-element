@@ -4,4 +4,4 @@ node_js:
 before_script:
   - npm install -g eslint eslint-plugin-html
 script:
-  - "yarn run test"
+  - "npm run test"
