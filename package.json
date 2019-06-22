@@ -30,14 +30,12 @@
     "gulp-exclude-gitignore": "^1.0.0",
     "gulp-line-ending-corrector": "^1.0.1",
     "gulp-mocha": "^3.0.1",
-    "gulp-nsp": "^2.1.0",
     "gulp-plumber": "^1.0.0",
     "yeoman-assert": "^2.2.1",
     "yeoman-test": "^1.6.0"
   },
   "repository": "https://github.com/valleweb/generator-polymer-init-valle-element.git",
   "scripts": {
-    "prepublish": "gulp prepublish",
     "test": "gulp && eslint generators/app/index.js"
   },
   "license": "MIT"
